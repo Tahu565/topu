@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="reminder">
+    <div class="reminder-container">
+        <h1>Reminder</h1>
+        <form>
+            <label for="bill-name">Nama Tagihan:</label>
+            <input type="text" id="bill-name" name="bill-name" required>
+            
+            <label for="due-date">Tanggal Jatuh Tempo:</label>
+            <input type="date" id="due-date" name="due-date" required>
+            
+            <button type="submit">Simpan Tagihan</button>
+        </form>
+        <div class="reminder-list">
+            <h2>Daftar Tagihan</h2>
+            <p>Belum ada tagihan.</p>
+        </div>
+        <button class="keluar-button" onclick="redirectToDashboard()">Keluar</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
